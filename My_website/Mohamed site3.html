@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Khaled - Professional CV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
+                        dark: {
+                            800: '#1e293b',
+                            900: '#0f172a',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+        }
+        .section-title {
+            position: relative;
+            padding-left: 1.5rem;
+            color: #0c4a6e;
+        }
+        .section-title:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.35em;
+            height: 1.25em;
+            width: 0.35em;
+            background-color: #0ea5e9;
+            border-radius: 0.175em;
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: 0.75rem;
+            top: 0.5em;
+            height: calc(100% - 1em);
+            width: 2px;
+            background-color: #bae6fd;
+        }
+        .timeline-icon {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            z-index: 10;
+            background-color: #0ea5e9;
+            box-shadow: 0 2px 4px rgba(14, 165, 233, 0.3);
+        }
+        .badge-icon {
+            transition: all 0.3s ease;
+        }
+        .badge-icon:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(14, 165, 233, 0.2);
+        }
+        .contact-icon {
+            width: 1.5rem;
+            text-align: center;
+            margin-right: 0.75rem;
+            color: #0ea5e9;
+        }
+        .skill-pill {
+            display: inline-flex;
+            align-items: center;
+            background-color: rgba(14, 165, 233, 0.1);
+            border: 1px solid rgba(14, 165, 233, 0.2);
+            border-radius: 9999px;
+            padding: 0.25rem 0.75rem;
+            margin: 0.25rem;
+            font-size: 0.875rem;
+            color: #0369a1;
+            transition: all 0.2s ease;
+        }
+        .skill-pill:hover {
+            background-color: rgba(14, 165, 233, 0.2);
+            transform: translateY(-2px);
+        }
+        .skill-pill i {
+            margin-right: 0.375rem;
+        }
+        .hover-scale {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(2, 132, 199, 0.1);
+        }
+        .hover-scale:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 15px rgba(2, 132, 199, 0.1);
+        }
+        .card-bg {
+            background: linear-gradient(145deg, #ffffff 0%, #f8fcff 100%);
+            border: 1px solid rgba(186, 230, 253, 0.5);
+        }
+        .portfolio-card {
+            background: linear-gradient(145deg, #ffffff 0%, #f8fcff 100%);
+            border: 1px solid rgba(186, 230, 253, 0.5);
+            transition: all 0.3s ease;
+        }
+        .portfolio-card:hover {
+            background: linear-gradient(145deg, #ffffff 0%, #f0f9ff 100%);
+            border-color: #7dd3fc;
+            transform: translateY(-3px);
+        }
+        .profile-img {
+            background: linear-gradient(135deg, #0ea5e9 0%, #0369a1 100%);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <div class="container mx-auto px-4 py-8 max-w-6xl">
+        <!-- Header Section -->
+        <header class="card-bg rounded-xl p-6 mb-8 hover-scale">
+            <div class="flex flex-col md:flex-row items-start md:items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <div class="w-24 h-24 rounded-full profile-img flex items-center justify-center text-white text-3xl font-bold mr-4 shadow-md">
+                        MK
+                    </div>
+                    <div>
+                        <h1 class="text-3xl font-bold text-primary-900">Mohamed Khaled</h1>
+                        <div class="flex flex-wrap gap-2 mt-2">
+                            <span class="skill-pill"><i class="fas fa-calculator"></i> Cost Department Manager</span>
+                            <span class="skill-pill"><i class="fas fa-chart-line"></i> Financial Analytics</span>
+                            <span class="skill-pill"><i class="fas fa-database"></i> Data Analytics</span>
+                            <span class="skill-pill"><i class="fas fa-code"></i> Web Developer</span>
+                            <span class="skill-pill"><i class="fab fa-sap"></i> SAP Consulting</span>
+                            <span class="skill-pill"><i class="fas fa-bullhorn"></i> Digital Marketing</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:ml-auto mt-4 md:mt-0">
+                    <div class="flex flex-col space-y-2">
+                        <a href="mailto:Mohamedkhaledmansour1@gmail.com" class="flex items-center text-primary-700 hover:text-primary-600 transition">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            Mohamedkhaledmansour1@gmail.com
+                        </a>
+                        <div class="flex items-center text-primary-700">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            Horizontina, Rio Grande do Sul, Brazil
+                        </div>
+                        <a href="tel:+5555996835550" class="flex items-center text-primary-700 hover:text-primary-600 transition">
+                            <i class="fas fa-phone contact-icon"></i>
+                            +55 55 996835550
+                        </a>
+                        <a href="https://www.linkedin.com/in/mohamed-khaled-a180b0ab" target="_blank" class="flex items-center text-primary-600 hover:text-primary-800 transition">
+                            <i class="fab fa-linkedin contact-icon"></i>
+                            LinkedIn Profile
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- About Me Section -->
+        <section class="card-bg rounded-xl p-6 mb-8 hover-scale">
+            <h2 class="text-2xl font-bold mb-4 section-title">About Me</h2>
+            <div class="flex items-start">
+                <div class="bg-primary-100 p-3 rounded-full mr-4 text-primary-600">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <div>
+                    <p class="text-primary-800">
+                        I'm Mohamed, 35 years old, Cost Department Manager and part of Financial Analytics team, currently residing in Horizontina, Brazil. With over 12 years of experience in accounting and finance across various industries, I've developed expertise in cost control, financial analysis, and ERP systems implementation.
+                    </p>
+                    <p class="text-primary-800 mt-3">
+                        My career began as a junior accountant in construction, progressing through roles in plastics manufacturing, international clothing, electrical products, and healthcare. I've led cost department implementations, analyzed financial performance, and contributed to strategic decision-making at each organization.
+                    </p>
+                    <p class="text-primary-800 mt-3">
+                        Since moving to Brazil in 2022, I've been enhancing my skills in data analytics, business intelligence, and advanced financial modeling through courses from leading universities, with the goal of progressing to CFO-level responsibilities.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="card-bg rounded-xl p-6 mb-8 hover-scale">
+            <h2 class="text-2xl font-bold mb-6 section-title">Professional Experience</h2>
+            <div class="space-y-8">
+                <!-- Afri Medical -->
+                <article class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase-medical text-xs"></i>
+                    </div>
+                    <div class="bg-primary-50 p-4 rounded-lg border border-primary-100">
+                        <h3 class="text-xl font-semibold text-primary-900">Afri Medical</h3>
+                        <p class="text-primary-700 font-medium">Manager of Cost Control Section & Financial Analytics Member</p>
+                        <p class="text-primary-600 text-sm mb-3">November 2020 - October 2023 (Remote from Oct 2022)</p>
+                        <ul class="list-disc list-inside text-primary-800 space-y-2 pl-2">
+                            <li>Led cost department operations for healthcare products manufacturer with $50M+ annual revenue</li>
+                            <li>Implemented SAP ERP system with customized cost accounting modules</li>
+                            <li>Developed Power BI dashboards tracking real-time product profitability</li>
+                            <li>Reduced material waste by 15% through lean manufacturing analysis</li>
+                            <li>Prepared regulatory cost analyses for FDA and CMS compliance</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Teba United Group -->
+                <article class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-industry text-xs"></i>
+                    </div>
+                    <div class="bg-primary-50 p-4 rounded-lg border border-primary-100">
+                        <h3 class="text-xl font-semibold text-primary-900">Teba United Group (Schneider Branches)</h3>
+                        <p class="text-primary-700 font-medium">Manager of Cost Control Section & Financial Analytics Member</p>
+                        <p class="text-primary-600 text-sm mb-3">June 2020 - October 2020</p>
+                        <ul class="list-disc list-inside text-primary-800 space-y-2 pl-2">
+                            <li>Developed ABC models identifying 15-20% cost-saving opportunities in electrical products</li>
+                            <li>Integrated Softix ERP with real-time production data for cost tracking</li>
+                            <li>Trained 10+ analysts on Schneider's Global Costing Methodology</li>
+                            <li>Implemented variance analysis with >5% threshold alerts</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Metco -->
+                <article class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-tshirt text-xs"></i>
+                    </div>
+                    <div class="bg-primary-50 p-4 rounded-lg border border-primary-100">
+                        <h3 class="text-xl font-semibold text-primary-900">Metco (Middle East Tailoring Company)</h3>
+                        <p class="text-primary-700 font-medium">Manager of Cost Control Section & Financial Analytics Member</p>
+                        <p class="text-primary-600 text-sm mb-3">June 2018 – April 2020</p>
+                        <ul class="list-disc list-inside text-primary-800 space-y-2 pl-2">
+                            <li>Created dynamic cost structures for 50+ seasonal clothing styles</li>
+                            <li>Achieved 10-15% cost reduction through material and process optimization</li>
+                            <li>Implemented Activity-Based Costing for design/production activities</li>
+                            <li>Reduced sampling costs by 25% via digital approvals in SAP</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Misr El Hegaz Group -->
+                <article class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-building text-xs"></i>
+                    </div>
+                    <div class="bg-primary-50 p-4 rounded-lg border border-primary-100">
+                        <h3 class="text-xl font-semibold text-primary-900">Misr El Hegaz Group</h3>
+                        <p class="text-primary-700 font-medium">Manager of Cost Control Section & Financial Analytics Member</p>
+                        <p class="text-primary-600 text-sm mb-3">September 2012 – May 2018</p>
+                        <ul class="list-disc list-inside text-primary-800 space-y-2 pl-2">
+                            <li>Designed and implemented cost accounting rules in Netsis ERP system</li>
+                            <li>Established inventory control processes across 7 companies</li>
+                            <li>Developed budget analysis framework adopted group-wide</li>
+                            <li>Created financial reports supporting strategic decision-making</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="card-bg rounded-xl p-6 mb-8 hover-scale">
+            <h2 class="text-2xl font-bold mb-4 section-title">Education</h2>
+            <div class="flex items-start">
+                <div class="bg-primary-100 p-3 rounded-full mr-4 text-primary-600">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-primary-900">Ain Shams University</h3>
+                    <p class="text-primary-700">Faculty of Commerce</p>
+                    <p class="text-primary-600 text-sm mb-2">2007 - 2011</p>
+                    <p class="text-primary-800">Bachelor of Science in Accounting</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="card-bg rounded-xl p-6 mb-8 hover-scale">
+            <h2 class="text-2xl font-bold mb-4 section-title">Core Competencies</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div>
+                    <h3 class="text-lg font-semibold text-primary-800 mb-2 flex items-center">
+                        <i class="fas fa-calculator mr-2 text-primary-600"></i> Financial Expertise
+                    </h3>
+                    <div class="flex flex-wrap">
+                        <span class="skill-pill">Cost Accounting</span>
+                        <span class="skill-pill">Financial Analysis</span>
+                        <span class="skill-pill">Budgeting</span>
+                        <span class="skill-pill">Variance Analysis</span>
+                        <span class="skill-pill">Profitability Optimization</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold text-primary-800 mb-2 flex items-center">
+                        <i class="fas fa-database mr-2 text-primary-600"></i> Technical Skills
+                    </h3>
+                    <div class="flex flex-wrap">
+                        <span class="skill-pill"><i class="fab fa-sap"></i> SAP ERP</span>
+                        <span class="skill-pill"><i class="fas fa-file-excel"></i> Advanced Excel</span>
+                        <span class="skill-pill"><i class="fas fa-chart-bar"></i> Power BI</span>
+                        <span class="skill-pill"><i class="fas fa-table"></i> Tableau</span>
+                        <span class="skill-pill"><i class="fas fa-code"></i> SQL</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold text-primary-800 mb-2 flex items-center">
+                        <i class="fas fa-users mr-2 text-primary-600"></i> Soft Skills
+                    </h3>
+                    <div class="flex flex-wrap">
+                        <span class="skill-pill">Strategic Communication</span>
+                        <span class="skill-pill">Cross-functional Leadership</span>
+                        <span class="skill-pill">Problem Solving</span>
+                        <span class="skill-pill">Process Improvement</span>
+                        <span class="skill-pill">Team Management</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="card-bg rounded-xl p-6 mb-8 hover-scale">
+            <h2 class="text-2xl font-bold mb-6 section-title">Certifications & Training</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-primary-50 p-4 rounded-lg border border-primary-100">
+                    <div class="flex items-center mb-2">
+                        <div class="bg-primary-100 p-2 rounded-full mr-3 text-primary-600">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-primary-900">Google Data Analytics Professional</h4>
+                    </div>
+                    <p class="text-primary-600 text-sm mb-3">Coursera | 2023</p>
+                    <ul class="list-disc list-inside text-primary-800 space-y-1 text-sm pl-2">
+                        <li>Data cleaning and transformation</li>
+                        <li>Visualization and dashboard creation</li>
+                        <li>SQL and R programming</li>
+                    </ul>
+                </div>
+
+                <div class="bg-primary-50 p-4 rounded-lg border border-primary-100">
+                    <div class="flex items-center mb-2">
+                        <div class="bg-primary-100 p-2 rounded-full mr-3 text-primary-600">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-primary-900">Microsoft Data Analytics</h4>
+                    </div>
+                    <p class="text-primary-600 text-sm mb-3">2023</p>
+                    <ul class="list-disc list-inside text-primary-800 space-y-1 text-sm pl-2">
+                        <li>Power BI and DAX</li>
+                        <li>Excel Power Tools</li>
+                        <li>Data modeling</li>
+                    </ul>
+                </div>
+
+                <div class="bg-primary-50 p-4 rounded-lg border border-primary-100">
+                    <div class="flex items-center mb-2">
+                        <div class="bg-primary-100 p-2 rounded-full mr-3 text-primary-600">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-primary-900">Certified Management Accountant (CMA) Part 1</h4>
+                    </div>
+                    <p class="text-primary-600 text-sm mb-3">Institute of Professional Accountants | 2017</p>
+                </div>
+
+                <div class="bg-primary-50 p-4 rounded-lg border border-primary-100">
+                    <div class="flex items-center mb-2">
+                        <div class="bg-primary-100 p-2 rounded-full mr-3 text-primary-600">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-primary-900">Web Development</h4>
+                    </div>
+                    <p class="text-primary-600 text-sm mb-3">2023</p>
+                    <div class="flex flex-wrap">
+                        <span class="skill-pill"><i class="fab fa-html5"></i> HTML5</span>
+                        <span class="skill-pill"><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <span class="skill-pill"><i class="fab fa-js"></i> JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolios Section -->
+        <section class="card-bg rounded-xl p-6 mb-8 hover-scale">
+            <h2 class="text-2xl font-bold mb-4 section-title">My Portfolios</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <a href="https://www.linkedin.com/in/mohamed-khaled-a180b0ab" target="_blank" class="portfolio-card flex items-center p-3 rounded-lg">
+                    <i class="fab fa-linkedin text-2xl text-[#0A66C2] mr-3"></i>
+                    <div>
+                        <h3 class="font-medium text-primary-900">LinkedIn Profile</h3>
+                        <p class="text-sm text-primary-600">Professional network and experience</p>
+                    </div>
+                </a>
+                
+                <a href="https://github.com/BlueFoxProgramming" target="_blank" class="portfolio-card flex items-center p-3 rounded-lg">
+                    <i class="fab fa-github text-2xl text-gray-800 mr-3"></i>
+                    <div>
+                        <h3 class="font-medium text-primary-900">GitHub</h3>
+                        <p class="text-sm text-primary-600">Code repositories and projects</p>
+                    </div>
+                </a>
+                
+                <a href="https://learn.microsoft.com/en-us/users/mohamedkhaled-3878/training" target="_blank" class="portfolio-card flex items-center p-3 rounded-lg">
+                    <i class="fab fa-microsoft text-2xl text-[#5E5E5E] mr-3"></i>
+                    <div>
+                        <h3 class="font-medium text-primary-900">Microsoft Learn</h3>
+                        <p class="text-sm text-primary-600">Certifications and badges</p>
+                    </div>
+                </a>
+                
+                <a href="https://www.coursera.org/user/83e717c3e9eede3e346ea27d5ded003b" target="_blank" class="portfolio-card flex items-center p-3 rounded-lg">
+                    <i class="fas fa-graduation-cap text-2xl text-[#0056D2] mr-3"></i>
+                    <div>
+                        <h3 class="font-medium text-primary-900">Coursera</h3>
+                        <p class="text-sm text-primary-600">Online courses and specializations</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Badges Section -->
+        <section class="card-bg rounded-xl p-6 mb-8 hover-scale">
+            <h2 class="text-2xl font-bold mb-6 section-title">Technical Badges</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                <div class="flex flex-col items-center p-3 bg-white rounded-lg shadow-sm">
+                    <i class="fab fa-powerbi text-4xl text-[#F2C811] mb-2 badge-icon"></i>
+                    <p class="text-sm font-medium text-primary-800">Power BI</p>
+                </div>
+                <div class="flex flex-col items-center p-3 bg-white rounded-lg shadow-sm">
+                    <i class="fab fa-microsoft text-4xl text-[#5E5E5E] mb-2 badge-icon"></i>
+                    <p class="text-sm font-medium text-primary-800">Microsoft 365</p>
+                </div>
+                <div class="flex flex-col items-center p-3 bg-white rounded-lg shadow-sm">
+                    <i class="fas fa-database text-4xl text-[#0FAAFF] mb-2 badge-icon"></i>
+                    <p class="text-sm font-medium text-primary-800">SAP ERP</p>
+                </div>
+                <div class="flex flex-col items-center p-3 bg-white rounded-lg shadow-sm">
+                    <i class="fab fa-python text-4xl text-[#3776AB] mb-2 badge-icon"></i>
+                    <p class="text-sm font-medium text-primary-800">Python</p>
+                </div>
+                <div class="flex flex-col items-center p-3 bg-white rounded-lg shadow-sm">
+                    <i class="fab fa-html5 text-4xl text-[#E34F26] mb-2 badge-icon"></i>
+                    <p class="text-sm font-medium text-primary-800">HTML5</p>
+                </div>
+                <div class="flex flex-col items-center p-3 bg-white rounded-lg shadow-sm">
+                    <i class="fas fa-file-alt text-4xl text-[#F29111] mb-2 badge-icon"></i>
+                    <p class="text-sm font-medium text-primary-800">SQL</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section class="card-bg rounded-xl p-6 hover-scale">
+            <h2 class="text-2xl font-bold mb-4 section-title">Resources</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-primary-50 p-4 rounded-lg border border-primary-100">
+                    <h3 class="text-lg font-semibold text-primary-800 mb-3 flex items-center">
+                        <i class="fas fa-video mr-2 text-primary-600"></i> My Videos
+                    </h3>
+                    <div class="space-y-2">
+                        <a href="https://www.loom.com/share/045f812bbe80437ca813213dafb72837?sid=da7e973d-d5db-4589-a6f1-23cb45612b82" target="_blank" class="flex items-center text-primary-700 hover:text-primary-600 transition">
+                            <i class="fas fa-play-circle mr-2"></i> Loom Video
+                        </a>
+                        <a href="https://drive.google.com/drive/folders/14yol2sBZELFVOGHb-vPBft-gS90FtN6a?usp=drive_link" target="_blank" class="flex items-center text-primary-700 hover:text-primary-600 transition">
+                            <i class="fas fa-folder-open mr-2"></i> Google Drive Videos
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="bg-primary-50 p-4 rounded-lg border border-primary-100">
+                    <h3 class="text-lg font-semibold text-primary-800 mb-3 flex items-center">
+                        <i class="fas fa-certificate mr-2 text-primary-600"></i> My Certificates
+                    </h3>
+                    <div class="space-y-2">
+                        <a href="https://drive.google.com/drive/folders/1ZCRtei278TUS2EJfyA1I9jUtmjZm_t3u?usp=drive_link" target="_blank" class="flex items-center text-primary-700 hover:text-primary-600 transition">
+                            <i class="fas fa-graduation-cap mr-2"></i> Education Certificates
+                        </a>
+                        <a href="https://drive.google.com/drive/folders/1ZCRtei278TUS2EJfyA1I9jUtmjZm_t3u?usp=drive_link" target="_blank" class="flex items-center text-primary-700 hover:text-primary-600 transition">
+                            <i class="fas fa-briefcase mr-2"></i> Experience Certificates
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center text-primary-600 text-sm mt-12">
+            <p>© 2023 Mohamed Khaled. All rights reserved.</p>
+            <p class="mt-1">Last updated: June 2023</p>
+            <div class="flex justify-center space-x-4 mt-3">
+                <a href="mailto:Mohamedkhaledmansour1@gmail.com" class="text-primary-500 hover:text-primary-700 transition">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mohamed-khaled-a180b0ab" target="_blank" class="text-primary-500 hover:text-primary-700 transition">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/BlueFoxProgramming" target="_blank" class="text-primary-500 hover:text-primary-700 transition">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

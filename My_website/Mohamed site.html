@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Khaled - Professional CV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                        },
+                        accent: '#4f46e5',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+        }
+        .section-title {
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        .section-title:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.35em;
+            height: 1.25em;
+            width: 0.35em;
+            background-color: #4f46e5;
+            border-radius: 0.175em;
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: 0.75rem;
+            top: 0.5em;
+            height: calc(100% - 1em);
+            width: 2px;
+            background-color: #e5e7eb;
+        }
+        .timeline-icon {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            z-index: 10;
+        }
+        .badge-icon {
+            transition: transform 0.3s ease;
+        }
+        .badge-icon:hover {
+            transform: translateY(-5px);
+        }
+        .contact-icon {
+            width: 1.5rem;
+            text-align: center;
+            margin-right: 0.75rem;
+        }
+        .skill-pill {
+            display: inline-flex;
+            align-items: center;
+            background-color: #f3f4f6;
+            border-radius: 9999px;
+            padding: 0.25rem 0.75rem;
+            margin: 0.25rem;
+            font-size: 0.875rem;
+        }
+        .skill-pill i {
+            margin-right: 0.375rem;
+        }
+        .hover-scale {
+            transition: transform 0.2s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <div class="container mx-auto px-4 py-8 max-w-6xl">
+        <!-- Header Section -->
+        <header class="bg-white rounded-xl shadow-sm p-6 mb-8 hover-scale">
+            <div class="flex flex-col md:flex-row items-start md:items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <div class="w-24 h-24 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white text-3xl font-bold mr-4">
+                        MK
+                    </div>
+                    <div>
+                        <h1 class="text-3xl font-bold text-gray-900">Mohamed Khaled</h1>
+                        <p class="text-lg text-gray-600 mt-1 flex items-center">
+                            <i class="fas fa-briefcase mr-2 text-blue-500"></i>
+                            Cost Department Manager and Financial Analytics
+                        </p>
+                    </div>
+                </div>
+                <div class="md:ml-auto mt-4 md:mt-0">
+                    <div class="flex flex-col space-y-2">
+                        <a href="mailto:Mohamedkhaledmansour1@gmail.com" class="flex items-center text-gray-700 hover:text-blue-600 transition">
+                            <i class="fas fa-envelope contact-icon text-blue-500"></i>
+                            Mohamedkhaledmansour1@gmail.com
+                        </a>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-map-marker-alt contact-icon text-green-500"></i>
+                            Horizontina, Rio Grande do Sul, Brazil
+                        </div>
+                        <a href="tel:+5555996835550" class="flex items-center text-gray-700 hover:text-blue-600 transition">
+                            <i class="fas fa-phone contact-icon text-purple-500"></i>
+                            +55 55 996835550
+                        </a>
+                        <a href="https://www.linkedin.com/in/mohamed-khaled-a180b0ab" target="_blank" class="flex items-center text-blue-600 hover:text-blue-800 transition">
+                            <i class="fab fa-linkedin contact-icon"></i>
+                            LinkedIn Profile
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- About Me Section -->
+        <section class="bg-white rounded-xl shadow-sm p-6 mb-8 hover-scale">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4 section-title">About Me</h2>
+            <p class="text-gray-700">
+                I'm an Egyptian living in Brazil, with over 12 years of experience in accounting and finance. I've worked in various roles and industries, developing strong skills in cost control, financial analysis, and ERP systems. I am looking for a job at a reputable corporation where I can use my skills to achieve my professional and the corporation goals.
+            </p>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="bg-white rounded-xl shadow-sm p-6 mb-8 hover-scale">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 section-title">Professional Experience</h2>
+            <div class="space-y-8">
+                <!-- Afri Medical -->
+                <article class="timeline-item">
+                    <div class="timeline-icon bg-blue-500">
+                        <i class="fas fa-briefcase-medical text-xs"></i>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                        <h3 class="text-xl font-semibold text-gray-800">Afri Medical</h3>
+                        <p class="text-gray-600 font-medium">Manager of Cost Control Section & Financial Analytics Member</p>
+                        <p class="text-gray-500 text-sm mb-3">November 2020 - October 2023, Remotely: October 2022 - February 2023</p>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2 pl-2">
+                            <li>Review, analysis, and monthly evaluation of inventory.</li>
+                            <li>Review of prices and quantities compared to vendor invoices.</li>
+                            <li>Calculation of the cost of new production order.</li>
+                            <li>Participation of the annual budget, providing all information from the costs department.</li>
+                            <li>Permanently review the data for the preparation of the production cost with the greatest possible accuracy.</li>
+                            <li>An analysis of expenditure for the preparation of financial statements, as well as analytical comparison between expenditure and revenue.</li>
+                            <li>Preparation of balance sheet and analysis for the preparation of the company's financial statements in accordance with accounting standards.</li>
+                            <li>Application of cost accounting principles to perform studies that provide detailed cost information that is not provided by general accounting systems.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Teba United Group -->
+                <article class="timeline-item">
+                    <div class="timeline-icon bg-green-500">
+                        <i class="fas fa-industry text-xs"></i>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                        <h3 class="text-xl font-semibold text-gray-800">Teba United Group (Schneider Branches)</h3>
+                        <p class="text-gray-600 font-medium">Manager of Cost Control Section & Financial Analytics Member</p>
+                        <p class="text-gray-500 text-sm mb-3">June 2020 - October 2020</p>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2 pl-2">
+                            <li>Develop activity-based costing (ABC) models for electrical panels, breakers, and IoT systems, identifying 15-20% cost-saving opportunities in raw materials, labor efficiency, and overhead allocation.</li>
+                            <li>Monitor production vs. standard costs (>5% threshold), investigating deviations (e.g., copper price volatility).</li>
+                            <li>Leverage Softix and prepare SAP to automate scrap/waste tracking (reducing material loss by 12%).</li>
+                            <li>Lead annual zero-based budgeting for 5+ production sites, aligning with Schneider's global efficiency targets.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Metco -->
+                <article class="timeline-item">
+                    <div class="timeline-icon bg-yellow-500">
+                        <i class="fas fa-tshirt text-xs"></i>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                        <h3 class="text-xl font-semibold text-gray-800">Metco (Middle East Tailoring Company)</h3>
+                        <p class="text-gray-600 font-medium">Manager of Cost Control Section & Financial Analytics Member</p>
+                        <p class="text-gray-500 text-sm mb-3">June 2018 – April 2020</p>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2 pl-2">
+                            <li>Develop granular cost structures for 50+ seasonal styles, allocating budgets across fabric, trims, labor, and overhead.</li>
+                            <li>Identify waste in sourcing/production, achieving 10-15% cost reduction through alternate material sourcing and process improvements.</li>
+                            <li>Deploy Activity-Based Costing (ABC) to assign costs to design/production activities.</li>
+                            <li>Oversee creation of dynamic cost sheets covering direct and indirect costs.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Misr El Hegaz Group -->
+                <article class="timeline-item">
+                    <div class="timeline-icon bg-red-500">
+                        <i class="fas fa-building text-xs"></i>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                        <h3 class="text-xl font-semibold text-gray-800">Misr El Hegaz Group</h3>
+                        <p class="text-gray-600 font-medium">Manager of Cost Control Section & Financial Analytics Member</p>
+                        <p class="text-gray-500 text-sm mb-3">September 2012 – May 2018</p>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2 pl-2">
+                            <li>Construction and elaboration of rules for new cost system in the ERP system of netsis company.</li>
+                            <li>Preparation of cost accounting to obtain the cost of goods sold to the financial department.</li>
+                            <li>Analysis of the company's budget and results.</li>
+                            <li>Inventory control and monitoring of the production process and quality.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Certified Accountant's Office -->
+                <article class="timeline-item">
+                    <div class="timeline-icon bg-indigo-500">
+                        <i class="fas fa-file-invoice-dollar text-xs"></i>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                        <h3 class="text-xl font-semibold text-gray-800">Certified Accountant's Office</h3>
+                        <p class="text-gray-600 font-medium">Certified Junior Accountant</p>
+                        <p class="text-gray-500 text-sm mb-3">August 2011 – September 2012</p>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2 pl-2">
+                            <li>Assisting senior accountants in the preparation of monthly, quarterly and annual closings.</li>
+                            <li>Preparing and submitting weekly and monthly financial reports.</li>
+                            <li>Updating financial data in databases to ensure the accuracy of the information.</li>
+                            <li>Assisting with reviewing payroll records and expenses.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Architecture Group -->
+                <article class="timeline-item">
+                    <div class="timeline-icon bg-pink-500">
+                        <i class="fas fa-archway text-xs"></i>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                        <h3 class="text-xl font-semibold text-gray-800">Architecture Group Reconstruction and Architectural Development</h3>
+                        <p class="text-gray-600 font-medium">Junior Accountant</p>
+                        <p class="text-gray-500 text-sm mb-3">August 2010 – July 2011</p>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2 pl-2">
+                            <li>Maintaining accounts receivable and payable, ensuring timely payment of invoices.</li>
+                            <li>Updating financial records via accounting software.</li>
+                            <li>Gathering payroll expenses and input into appropriate entry line.</li>
+                            <li>Preparing quarterly budget under the purview of senior management.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="bg-white rounded-xl shadow-sm p-6 mb-8 hover-scale">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4 section-title">Education</h2>
+            <div class="flex items-start">
+                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                    <i class="fas fa-graduation-cap text-blue-600"></i>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-800">Ain Shams University</h3>
+                    <p class="text-gray-600">Faculty of Commerce</p>
+                    <p class="text-gray-500 text-sm mb-2">2007 - 2011</p>
+                    <p class="text-gray-700">BSC Degree in Accounting</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses & Certifications Section -->
+        <section class="bg-white rounded-xl shadow-sm p-6 mb-8 hover-scale">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 section-title">Courses & Certifications</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Training for Accountants -->
+                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="flex items-center mb-2">
+                        <div class="bg-blue-100 p-2 rounded-full mr-3">
+                            <i class="fas fa-certificate text-blue-600"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-gray-800">Training for Accountants and Auditors</h4>
+                    </div>
+                    <p class="text-gray-600 mb-1">Integrated Accounting Office</p>
+                    <p class="text-gray-500 text-sm mb-3">01.07.2013 - 30.06.2014</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm pl-2">
+                        <li>Accounting & Auditing Standards</li>
+                        <li>GAAP/IFRS proficiency</li>
+                        <li>Tax compliance</li>
+                        <li>Internal controls</li>
+                    </ul>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="flex items-center mb-2">
+                        <div class="bg-green-100 p-2 rounded-full mr-3">
+                            <i class="fas fa-users text-green-600"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-gray-800">Soft Skills</h4>
+                    </div>
+                    <p class="text-gray-600 mb-1">Egyptian Institute of Accountants and Auditors</p>
+                    <p class="text-gray-500 text-sm mb-3">Year 2013</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm pl-2">
+                        <li>Strategic communication</li>
+                        <li>Problem-solving</li>
+                        <li>Stakeholder management</li>
+                        <li>Project management</li>
+                    </ul>
+                </div>
+
+                <!-- Professional Financial Accountant -->
+                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="flex items-center mb-2">
+                        <div class="bg-yellow-100 p-2 rounded-full mr-3">
+                            <i class="fas fa-calculator text-yellow-600"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-gray-800">Professional Financial Accountant</h4>
+                    </div>
+                    <p class="text-gray-600 mb-1">Scientific Computation Center /Cairo University</p>
+                    <p class="text-gray-500 text-sm mb-3">11.06.2014 – 24.08.2014</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm pl-2">
+                        <li>Financial statements preparation</li>
+                        <li>Data analysis skills</li>
+                        <li>Accounting principles</li>
+                        <li>Time management</li>
+                    </ul>
+                </div>
+
+                <!-- Electronic Accounting -->
+                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="flex items-center mb-2">
+                        <div class="bg-red-100 p-2 rounded-full mr-3">
+                            <i class="fas fa-laptop-code text-red-600"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-gray-800">Electronic Accounting in Quick Books</h4>
+                    </div>
+                    <p class="text-gray-600 mb-1">International Academy for Training</p>
+                    <p class="text-gray-500 text-sm mb-3">11.06.2014 – 24.08.2014</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm pl-2">
+                        <li>Recording invoices and sales receipts</li>
+                        <li>Managing payments</li>
+                        <li>Running payroll</li>
+                        <li>Tracking expenses</li>
+                    </ul>
+                </div>
+
+                <!-- CMA Course -->
+                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="flex items-center mb-2">
+                        <div class="bg-indigo-100 p-2 rounded-full mr-3">
+                            <i class="fas fa-chart-line text-indigo-600"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-gray-800">(C.M.A) Course Part 1</h4>
+                    </div>
+                    <p class="text-gray-600 mb-1">Institute of Professional Accountants (I.P.A)</p>
+                    <p class="text-gray-500 text-sm mb-3">05.05.2017 - 29.12.2017</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm pl-2">
+                        <li>Financial Analysis Skills</li>
+                        <li>Cost Accounting Skills</li>
+                        <li>Management and Mentoring</li>
+                        <li>Strategic Thinking</li>
+                    </ul>
+                </div>
+
+                <!-- Microsoft courses -->
+                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="flex items-center mb-2">
+                        <div class="bg-pink-100 p-2 rounded-full mr-3">
+                            <i class="fab fa-microsoft text-pink-600"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-gray-800">Microsoft courses de Trabalhador 4.0</h4>
+                    </div>
+                    <p class="text-gray-500 text-sm mb-3">Year 2023</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm pl-2">
+                        <li>Data analysis with Power BI</li>
+                        <li>Microsoft Office 365</li>
+                        <li>Dynamic 365 ERP</li>
+                        <li>HTML, CSS, JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Coursera Courses -->
+            <div class="mt-6 bg-blue-50 p-4 rounded-lg border border-blue-200">
+                <div class="flex items-center mb-3">
+                    <div class="bg-blue-100 p-2 rounded-full mr-3">
+                        <i class="fas fa-university text-blue-600"></i>
+                    </div>
+                    <h4 class="text-lg font-semibold text-gray-800">Coursera Courses</h4>
+                </div>
+                <p class="text-gray-500 text-sm mb-3">2023-2025</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    <span class="skill-pill"><i class="fas fa-database text-blue-500"></i> Data Analytics by Google</span>
+                    <span class="skill-pill"><i class="fas fa-chart-bar text-blue-500"></i> Data Analytics by Microsoft</span>
+                    <span class="skill-pill"><i class="fas fa-project-diagram text-blue-500"></i> Business Analytics</span>
+                    <span class="skill-pill"><i class="fas fa-code text-blue-500"></i> SQL Basics for Data Science</span>
+                    <span class="skill-pill"><i class="fab fa-python text-blue-500"></i> Python Programming</span>
+                    <span class="skill-pill"><i class="fas fa-search-dollar text-blue-500"></i> SEO Fundamentals</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="bg-white rounded-xl shadow-sm p-6 mb-8 hover-scale">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4 section-title">Professional Skills</h2>
+            <div class="space-y-4">
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2 flex items-center">
+                        <i class="fas fa-brain mr-2 text-indigo-500"></i> Soft Skills
+                    </h3>
+                    <div class="flex flex-wrap">
+                        <span class="skill-pill"><i class="fas fa-comments text-blue-500"></i> Communication</span>
+                        <span class="skill-pill"><i class="fas fa-people-group text-green-500"></i> Teamwork</span>
+                        <span class="skill-pill"><i class="fas fa-chalkboard-teacher text-yellow-500"></i> Presentation</span>
+                        <span class="skill-pill"><i class="fas fa-fire text-red-500"></i> Work Under Pressure</span>
+                        <span class="skill-pill"><i class="fas fa-book text-purple-500"></i> Continuous Learning</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2 flex items-center">
+                        <i class="fas fa-language mr-2 text-indigo-500"></i> Language Skills
+                    </h3>
+                    <div class="flex flex-wrap">
+                        <span class="skill-pill"><i class="fas fa-globe-africa text-blue-500"></i> Arabic: Fluent</span>
+                        <span class="skill-pill"><i class="fas fa-globe-europe text-green-500"></i> English: Advanced</span>
+                        <span class="skill-pill"><i class="fas fa-globe-americas text-yellow-500"></i> Portuguese: Good</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2 flex items-center">
+                        <i class="fas fa-laptop-code mr-2 text-indigo-500"></i> Programs & ERP Systems
+                    </h3>
+                    <div class="flex flex-wrap">
+                        <span class="skill-pill"><i class="fab fa-sap text-blue-500"></i> SAP Business One</span>
+                        <span class="skill-pill"><i class="fas fa-cloud text-green-500"></i> Oracle Cloud ERP</span>
+                        <span class="skill-pill"><i class="fas fa-cubes text-yellow-500"></i> Netsis ERP</span>
+                        <span class="skill-pill"><i class="fas fa-cube text-red-500"></i> Dynamic 365 ERP</span>
+                        <span class="skill-pill"><i class="fas fa-file-invoice-dollar text-purple-500"></i> QuickBooks</span>
+                        <span class="skill-pill"><i class="fas fa-database text-pink-500"></i> SAP Hana</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolios Section -->
+        <section class="bg-white rounded-xl shadow-sm p-6 mb-8 hover-scale">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4 section-title">My Portfolios</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <a href="https://www.linkedin.com/in/mohamed-khaled-a180b0ab" target="_blank" class="flex items-center p-3 bg-gray-50 rounded-lg border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition">
+                    <i class="fab fa-linkedin text-2xl text-blue-600 mr-3"></i>
+                    <div>
+                        <h3 class="font-medium text-gray-800">LinkedIn Profile</h3>
+                        <p class="text-sm text-gray-600">Professional network</p>
+                    </div>
+                </a>
+                
+                <a href="https://github.com/BlueFoxProgramming" target="_blank" class="flex items-center p-3 bg-gray-50 rounded-lg border border-gray-200 hover:border-gray-300 hover:bg-gray-100 transition">
+                    <i class="fab fa-github text-2xl text-gray-800 mr-3"></i>
+                    <div>
+                        <h3 class="font-medium text-gray-800">GitHub</h3>
+                        <p class="text-sm text-gray-600">Code repositories</p>
+                    </div>
+                </a>
+                
+                <a href="https://learn.microsoft.com/en-us/users/mohamedkhaled-3878/training" target="_blank" class="flex items-center p-3 bg-gray-50 rounded-lg border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition">
+                    <i class="fab fa-microsoft text-2xl text-blue-600 mr-3"></i>
+                    <div>
+                        <h3 class="font-medium text-gray-800">Microsoft Learn</h3>
+                        <p class="text-sm text-gray-600">Certifications</p>
+                    </div>
+                </a>
+                
+                <a href="https://www.coursera.org/user/83e717c3e9eede3e346ea27d5ded003b" target="_blank" class="flex items-center p-3 bg-gray-50 rounded-lg border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition">
+                    <i class="fas fa-graduation-cap text-2xl text-blue-600 mr-3"></i>
+                    <div>
+                        <h3 class="font-medium text-gray-800">Coursera</h3>
+                        <p class="text-sm text-gray-600">Online courses</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Badges Section -->
+        <section class="bg-white rounded-xl shadow-sm p-6 mb-8 hover-scale">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 section-title">Technical Badges</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                <div class="flex flex-col items-center p-3 bg-gray-50 rounded-lg">
+                    <i class="fab fa-powerbi text-4xl text-blue-500 mb-2 badge-icon"></i>
+                    <p class="text-sm font-medium text-gray-700">Power BI</p>
+                </div>
+                <div class="flex flex-col items-center p-3 bg-gray-50 rounded-lg">
+                    <i class="fab fa-microsoft text-4xl text-blue-600 mb-2 badge-icon"></i>
+                    <p class="text-sm font-medium text-gray-700">Microsoft 365</p>
+                </div>
+                <div class="flex flex-col items-center p-3 bg-gray-50 rounded-lg">
+                    <i class="fas fa-database text-4xl text-green-600 mb-2 badge-icon"></i>
+                    <p class="text-sm font-medium text-gray-700">SAP ERP</p>
+                </div>
+                <div class="flex flex-col items-center p-3 bg-gray-50 rounded-lg">
+                    <i class="fab fa-python text-4xl text-yellow-500 mb-2 badge-icon"></i>
+                    <p class="text-sm font-medium text-gray-700">Python</p>
+                </div>
+                <div class="flex flex-col items-center p-3 bg-gray-50 rounded-lg">
+                    <i class="fab fa-html5 text-4xl text-orange-500 mb-2 badge-icon"></i>
+                    <p class="text-sm font-medium text-gray-700">HTML5</p>
+                </div>
+                <div class="flex flex-col items-center p-3 bg-gray-50 rounded-lg">
+                    <i class="fas fa-hashtag text-4xl text-indigo-500 mb-2 badge-icon"></i>
+                    <p class="text-sm font-medium text-gray-700">C#</p>
+                </div>
+                <div class="flex flex-col items-center p-3 bg-gray-50 rounded-lg">
+                    <i class="fas fa-file-alt text-4xl text-blue-700 mb-2 badge-icon"></i>
+                    <p class="text-sm font-medium text-gray-700">SQL</p>
+                </div>
+                <div class="flex flex-col items-center p-3 bg-gray-50 rounded-lg">
+                    <i class="fab fa-js text-4xl text-yellow-400 mb-2 badge-icon"></i>
+                    <p class="text-sm font-medium text-gray-700">JavaScript</p>
+                </div>
+                <div class="flex flex-col items-center p-3 bg-gray-50 rounded-lg">
+                    <i class="fab fa-java text-4xl text-red-500 mb-2 badge-icon"></i>
+                    <p class="text-sm font-medium text-gray-700">Java</p>
+                </div>
+                <div class="flex flex-col items-center p-3 bg-gray-50 rounded-lg">
+                    <i class="fab fa-react text-4xl text-blue-400 mb-2 badge-icon"></i>
+                    <p class="text-sm font-medium text-gray-700">React</p>
+                </div>
+                <div class="flex flex-col items-center p-3 bg-gray-50 rounded-lg">
+                    <i class="fab fa-aws text-4xl text-orange-500 mb-2 badge-icon"></i>
+                    <p class="text-sm font-medium text-gray-700">AWS</p>
+                </div>
+                <div class="flex flex-col items-center p-3 bg-gray-50 rounded-lg">
+                    <i class="fab fa-google text-4xl text-blue-500 mb-2 badge-icon"></i>
+                    <p class="text-sm font-medium text-gray-700">Google Cloud</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section class="bg-white rounded-xl shadow-sm p-6 mb-8 hover-scale">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4 section-title">My Resources</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center">
+                        <i class="fas fa-video mr-2 text-red-500"></i> My Videos
+                    </h3>
+                    <div class="space-y-2">
+                        <a href="https://www.loom.com/share/045f812bbe80437ca813213dafb72837?sid=da7e973d-d5db-4589-a6f1-23cb45612b82" target="_blank" class="flex items-center text-blue-600 hover:text-blue-800 transition">
+                            <i class="fas fa-play-circle mr-2"></i> Loom Video
+                        </a>
+                        <a href="https://drive.google.com/drive/folders/14yol2sBZELFVOGHb-vPBft-gS90FtN6a?usp=drive_link" target="_blank" class="flex items-center text-blue-600 hover:text-blue-800 transition">
+                            <i class="fas fa-folder-open mr-2"></i> Google Drive Videos
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center">
+                        <i class="fas fa-certificate mr-2 text-green-500"></i> My Certificates
+                    </h3>
+                    <div class="space-y-2">
+                        <a href="https://drive.google.com/drive/folders/1ZCRtei278TUS2EJfyA1I9jUtmjZm_t3u?usp=drive_link" target="_blank" class="flex items-center text-blue-600 hover:text-blue-800 transition">
+                            <i class="fas fa-graduation-cap mr-2"></i> Education Certificates
+                        </a>
+                        <a href="https://drive.google.com/drive/folders/1ZCRtei278TUS2EJfyA1I9jUtmjZm_t3u?usp=drive_link" target="_blank" class="flex items-center text-blue-600 hover:text-blue-800 transition">
+                            <i class="fas fa-briefcase mr-2"></i> Experience Certificates
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center text-gray-500 text-sm mt-12">
+            <p>© 2023 Mohamed Khaled. All rights reserved.</p>
+            <p class="mt-1">Last updated: June 2023</p>
+            <div class="flex justify-center space-x-4 mt-3">
+                <a href="mailto:Mohamedkhaledmansour1@gmail.com" class="text-gray-500 hover:text-blue-600 transition">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mohamed-khaled-a180b0ab" target="_blank" class="text-gray-500 hover:text-blue-700 transition">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/BlueFoxProgramming" target="_blank" class="text-gray-500 hover:text-gray-700 transition">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
